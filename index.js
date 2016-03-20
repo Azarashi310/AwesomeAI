@@ -5,6 +5,9 @@ process.stdin.on('data', (chank)=>{
     case 'hello':
       response = 'こんにちは';
       break;
+    case 'hoge':
+      response = 'ホゲホゲ'
+      break;
     default:
       response = `unknown:${word}`;
       break;
@@ -12,4 +15,3 @@ process.stdin.on('data', (chank)=>{
 
   console.log(response);
 });
-
