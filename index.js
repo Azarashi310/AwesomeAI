@@ -11,6 +11,10 @@ process.stdin.on('data', (chank)=>{
     case 'chitose':
       response = '俺が規約だ';
       break;
+    case 'day':
+      var date = new Date();
+      response = `${['日','月','火','水','木','金','土'][date.getDay()]}曜日`;
+      break;
     default:
       response = `unknown:${word}`;
       break;
